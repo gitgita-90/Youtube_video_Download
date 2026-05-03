@@ -24,7 +24,7 @@ def download_audio(url, quality):
         '256k': 'bestaudio/best',
     }
     
-    output_path = r'E:\New folder/'
+    output_path = r'E:\New folder/' #<== change the path where you want to save the file
     
     ydl_opts = {
         'format': audio_format[quality],
@@ -53,7 +53,7 @@ def download_video(url, resolution):
         '15360p': 'bestvideo[height<=15360]+bestaudio/best[height<=15360]',
     }
     
-    output_path = r'E:\New folder/'
+    output_path = r'E:\New folder/' #<== change the path where you want to save the file
     
     ydl_opts = {
         'format': video_format[resolution],
@@ -88,7 +88,7 @@ def main():
 
 if __name__ == '__main__':
     # Ensure the target directory exists
-    target_dir = r'E:\New folder'
+    target_dir = r'E:\New folder' #<== change the path where you want to save the file
     if not os.path.exists(target_dir):
         os.makedirs(target_dir)
         
